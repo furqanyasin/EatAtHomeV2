@@ -27,13 +27,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         riderUser.setOnClickListener(this);
 
         administratorUser = findViewById(R.id.btn_administrator_SignIn);
-        administratorUser.setOnClickListener(this);
+       /* administratorUser.setOnClickListener(this);*/
 
     }
 
     @Override
     public void onClick(View view) {
         if (view == clientUser) {
+            // start activity here
 
             Toast.makeText(this, "Clicked clientUser", Toast.LENGTH_SHORT).show();
         } else if (view == restaurantUser) {
