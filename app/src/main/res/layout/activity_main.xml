@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text="Eat At Home"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Be Wise Shop Wise"
+            android:layout_marginBottom="50dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_client_SignIn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Client Sign In"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/ButtonTheme"
+            android:backgroundTint="@color/colorAccent"
+            app:cornerRadius="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_restaurent_SignIn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Restaurants Sign In"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/ButtonTheme"
+            android:backgroundTint="@color/colorGreen"
+            app:cornerRadius="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_rider_SignIn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Rider Sign In"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/ButtonTheme"
+            android:backgroundTint="@color/colorOrange"
+            app:cornerRadius="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_administrator_SignIn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Administrator Sign In"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/ButtonTheme"
+            android:backgroundTint="@color/colorRed"
+            app:cornerRadius="10dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
