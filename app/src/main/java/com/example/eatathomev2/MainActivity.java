@@ -2,10 +2,15 @@ package com.example.eatathomev2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.eatathomev2.AdministratorUser.AdministratorSignInActivity;
+import com.example.eatathomev2.ClientUser.ClientUserSignInActivity;
+import com.example.eatathomev2.ResaurantUser.RestaurantSignInActivity;
+import com.example.eatathomev2.RiderUser.RiderSignInActivity;
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -27,28 +32,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         riderUser.setOnClickListener(this);
 
         administratorUser = findViewById(R.id.btn_administrator_SignIn);
-       /* administratorUser.setOnClickListener(this);*/
+        administratorUser.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View view) {
         if (view == clientUser) {
-            // start activity here
+            Intent clientUser = new Intent(MainActivity.this, ClientUserSignInActivity.class);
+            startActivity(clientUser);
 
-            Toast.makeText(this, "Clicked clientUser", Toast.LENGTH_SHORT).show();
         } else if (view == restaurantUser) {
+            Intent restaurantUser = new Intent(MainActivity.this, RestaurantSignInActivity.class);
+            startActivity(restaurantUser);
 
-            Toast.makeText(this, "Clicked restaurantUser", Toast.LENGTH_SHORT).show();
-            // start activity here
         } else if (view == riderUser) {
+            Intent riderUser = new Intent(MainActivity.this, RiderSignInActivity.class);
+            startActivity(riderUser);
 
-            Toast.makeText(this, "Clicked riderUser", Toast.LENGTH_SHORT).show();
-            // start activity here
         } else if (view == administratorUser) {
-
-            Toast.makeText(this, "Clicked administratorUser", Toast.LENGTH_SHORT).show();
-            // start activity here
+            Intent administratorUser = new Intent(MainActivity.this, AdministratorSignInActivity.class);
+            startActivity(administratorUser);
         }
     }
 }

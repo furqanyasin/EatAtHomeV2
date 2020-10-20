@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    tools:context=".ClientUser.ClientUserSignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_client_user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColorHint="@android:color/white"
+            app:boxStrokeColor="@android:color/white"
+            app:counterTextColor="@android:color/white"
+            app:hintTextColor="@android:color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_client_user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_client_user_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColorHint="@android:color/white"
+            app:boxStrokeColor="@android:color/white"
+            app:counterTextColor="@android:color/white"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="@android:color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_client_user_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_client_user_Sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/colorGreen"
+            android:text="@string/sign_in"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:theme="@style/ButtonTheme"
+            app:cornerRadius="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cb_remember"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/remember_me"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/forgot_password"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/or"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/don_t_have_an_account_sign_up"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
