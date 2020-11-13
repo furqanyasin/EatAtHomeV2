@@ -9,9 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdministratorUser.AdministratorSignInActivity"></activity>
+        <activity android:name=".RestaurantUser.Activities.RestaurantHomeActivity"></activity>
+        <activity android:name=".AdministratorUser.AddRestaurantsActivity" />
+        <activity android:name=".AdministratorUser.AdministratorSignInActivity" />
         <activity android:name=".RiderUser.RiderSignInActivity" />
-        <activity android:name=".ResaurantUser.RestaurantSignInActivity" />
+        <activity android:name=".RestaurantUser.RestaurantSignInActivity" />
         <activity android:name=".ClientUser.ClientUserSignInActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

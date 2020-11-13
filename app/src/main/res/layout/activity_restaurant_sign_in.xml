@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/my_bg"
-    tools:context=".ResaurantUser.RestaurantSignInActivity">
+    tools:context=".RestaurantUser.RestaurantSignInActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
-           android:src="@drawable/admin"/>
+            android:src="@drawable/admin" />
 
 
         <com.google.android.material.textfield.TextInputLayout
